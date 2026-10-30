@@ -17,10 +17,10 @@ pdfmetrics.registerFont(TTFont("Body-Italic", FONTS + "ariali.ttf"))
 pdfmetrics.registerFontFamily("Body", normal="Body", bold="Body-Bold", italic="Body-Italic",
                               boldItalic="Body-Bold")
 
-INK = colors.HexColor("#1f2933")
-ACCENT = colors.HexColor("#1d4e89")
-RULE = colors.HexColor("#c5ced8")
-TINT = colors.HexColor("#eef3f8")
+INK = colors.black
+ACCENT = colors.black
+RULE = colors.black
+TINT = colors.white
 
 BODY = ParagraphStyle("body", fontName="Body", fontSize=10.5, leading=15, textColor=INK, spaceAfter=5)
 EQ = ParagraphStyle("eq", parent=BODY, leftIndent=16, spaceAfter=3)
@@ -74,9 +74,6 @@ def table(rows, widths):
 
 story = [
     Paragraph("LSTM Practice Questions: Solutions", TITLE),
-    Spacer(1, 6),
-    p("I used the sigmoid σ(z) = 1 / (1 + e^(−z)), the tanh formula given in the instructions, and "
-      "rounded intermediate values to 4 decimal places as asked."),
 
     h1("Question 1: Single-cell forward pass"),
     p("The plan is to find each gate's input z first, push it through the right activation, and "
