@@ -1,4 +1,4 @@
-"""Recomputes every numerical answer in LSTM_Practice_Solutions.pdf.
+"""Recomputes every numerical answer in AarushMehta_500119496.pdf.
 
 Run with: python verify_solutions.py
 PyTorch is optional; if it is installed, Q1 and Q2 are also cross-checked

@@ -1,4 +1,4 @@
-"""Builds LSTM_Practice_Solutions.pdf. Run with: python build_pdf.py"""
+"""Builds AarushMehta_500119496.pdf. Run with: python build_pdf.py"""
 import re
 
 from reportlab.lib import colors
@@ -201,6 +201,6 @@ story = [
       "is."),
 ]
 
-SimpleDocTemplate("LSTM_Practice_Solutions.pdf", pagesize=A4, leftMargin=2.2 * cm,
+SimpleDocTemplate("AarushMehta_500119496.pdf", pagesize=A4, leftMargin=2.2 * cm,
                   rightMargin=2.2 * cm, topMargin=2 * cm, bottomMargin=2 * cm,
                   title="LSTM Practice Questions: Solutions").build(story)
